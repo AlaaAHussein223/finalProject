@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialVibe</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+       <link rel="stylesheet" href="edit.css">
+</head>
+<body>
+      <nav class="nav">
+        <div class="icon">
+            <img src="images/Navigation.png" alt="">
+            <p id="p">SocialVibe</p>
+        </div>
+         <button class="menu-btn" id="menuBtn">
+       <i class="fa-solid fa-bars"></i>
+        </button>
+    <ul>
+       
+         <li>
+            <a href="index.html"> <i class="fa-regular fa-house"></i> Home</a>
+        </li>
+       
+        <li>
+             <a href="profie.html"> <i class="fa-solid fa-user"></i> Profile</a>
+        </li>
+        
+        <li>
+           <a href="index.html"> <img src="images/Button.png" alt=""></a>
+        </li>
+       
+         <li>
+             <img class="img2" src="images/04122285d1c9fbfd8872ce01bcfb455d9c9a7ec7 (1).jpg" alt="">
+        </li>
+       
+        <button class="button">
+             <li>
+            <a href="#" style="color: white;"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+            </li>
+    
+        </button>
+    </ul>
+   </nav>
+  <section class="container">
+     <div class="div1">
+      <p id="Edit">Edit Profile</p> <br>
+      <div class="text">
+        <p>Profile Picture</p>
+        <img src="images/04122285d1c9fbfd8872ce01bcfb455d9c9a7ec7 (1).jpg" alt="">
+      </div>
+      <div class="form">
+       <label for="user">Username</label> <br>
+       <input type="text" id="user" name="username" placeholder="demo_user"><br>
+       <label for="pass">Password</label> <br>
+       <input type="password" id="pass" name="password" placeholder=".....">
+      </div>
+      <div class="buttons">
+        <button id="btn1">
+       <a href="#">Save Changes</a>
+        </button>
+        <button id="btn2">
+          <a href="#">Cansel</a>
+        </button>
+      </div>
+     </div>
+  </section>
+   <script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.getElementById("menuBtn");
+  const navLinks = document.querySelector(".nav ul"); // لأن ul عندك مفيهاش id
+
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+});
+
+
+  </script>
+    
+</body>
+</html>

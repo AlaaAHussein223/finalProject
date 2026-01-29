@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialVibe</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+        <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+     <nav class="nav">
+        <div class="icon">
+            <img src="images/Navigation.png" alt="">
+            <p id="p">SocialVibe</p>
+        </div>
+         <button class="menu-btn" id="menuBtn">
+       <i class="fa-solid fa-bars"></i>
+        </button>
+    <ul>
+       
+         <li>
+            <a href="index.html"> <i class="fa-regular fa-house"></i> Home</a>
+        </li>
+       <button class="button">
+        <li>
+             <a href="profie.html" style="color: white;"> <i class="fa-solid fa-user"></i> Profile</a>
+        </li>
+        </button>
+        <li>
+           <a href="index.html"> <img src="images/Button.png" alt=""></a>
+        </li>
+       
+         <li>
+             <img class="img2" src="images/04122285d1c9fbfd8872ce01bcfb455d9c9a7ec7 (1).jpg" alt="">
+        </li>
+       
+        
+        <li>
+            <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+        </li>
+    
+    </ul>
+   </nav>
+
+   <section class="container">
+     <div class="div1">
+      <div class="logo">
+         <img src="images/04122285d1c9fbfd8872ce01bcfb455d9c9a7ec7 (1).jpg" alt="">
+        <a href="edit.html"> <img id="edit" src="images/Button (1).png" alt=""></a>
+      </div>
+      <div class="text">
+        <p id="name">Demo User</p>
+        <p>@demo_user</p>
+        <p>Welcome to my profile!</p>
+        <p>Joined in January 2024</p>
+        <p> <span>89</span> Posts</p>
+
+         <div class="buttons">
+        <button id="btn1">
+        <a href="edit.html">Edit Profile</a>
+        </button>
+        <button id="btn2">
+         <a href="#">Share Profile</a>
+        </button>
+       </div>
+
+      </div>
+      
+    </div>
+
+     <div class="div2">
+     <ul>
+        <li>
+            <button>
+                <a href="#">Posts</a>
+            </button>
+        </li>
+        <li>
+            <a href="#">Media</a>
+        </li>
+        <li>
+            <a href="#">Likes</a>
+        </li>
+     </ul>
+     </div>
+
+    <div class="div3">
+        <div class="profile">
+        <img src="images/04122285d1c9fbfd8872ce01bcfb455d9c9a7ec7 (1).jpg" alt="">
+        <p><span>Demo User</span><br><span class="p2">@ahmed_m • 2 hours <br> ag</span>o</p>
+       </div>
+     <div class="text">
+           <p>I love photography and traveling 📸✈️</p>
+     </div>
+    <div class="img1">
+      <img src="images/ab16927cc181c7a2a7e390ac9c07eb5a40c6c244.jpg" alt="">
+    </div>
+     <div class="act">
+    <div class="love">
+        <img src="images/Container.png" alt="">234
+    </div>
+    <div class="comment">
+        <img src="images/Vector (2).png" alt="">0
+    </div>
+    <div>
+        <img src="images/Icon (11).png" alt="">
+    </div>
+    
+    </div>
+    
+
+    </div>
+    <div class="div4">
+        <div class="profile">
+        <img src="images/04122285d1c9fbfd8872ce01bcfb455d9c9a7ec7 (1).jpg" alt="">
+        <p><span>Demo User</span><br><span class="p2">@ahmed_m • 2 hours <br> ag</span>o</p>
+       </div>
+     <div class="text">
+           <p>Amazing lunch with friends 🍝</p>
+     </div>
+    <div class="img1">
+      <img src="images/Image (Post) (1).png" alt="">
+    </div>
+     <div class="act">
+    <div class="love">
+        <img src="images/Container.png" alt="">234
+    </div>
+    <div class="comment">
+        <img src="images/Vector (2).png" alt="">0
+    </div>
+    <div>
+        <img src="images/Icon (11).png" alt="">
+    </div>
+    
+    </div>
+    
+    </div>
+
+
+   </section>
+   
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.getElementById("menuBtn");
+  const navLinks = document.querySelector(".nav ul"); // لأن ul عندك مفيهاش id
+
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+});
+
+
+  </script>
+    
+</body>
+</html>

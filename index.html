@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Media</title>
+    <title>SocialVibe</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     
@@ -12,8 +12,12 @@
       <nav class="nav">
         <div class="icon">
             <img src="images/Navigation.png" alt="">
-            <h2 id="h2">SocialVibe</h2>
+            <p id="p">SocialVibe</p>
         </div>
+        <button class="menu-btn" id="menuBtn">
+       <i class="fa-solid fa-bars"></i>
+        </button>
+
     <ul>
        <button class="button">
          <li>
@@ -28,35 +32,133 @@
         </li>
     </ul>
    </nav>
-   <div class="container">
-    <div class="post1">
-        <div class="me">
-            <img src="images/04122285d1c9fbfd8872ce01bcfb455d9c9a7ec7 (1).jpg" alt="">
-            <p>Ahmed Mohamed <br>
-              @ahmed_m.2hours
-              ago
-            </p>
-        </div>
-        <p id="amazing"> Amazing view from my last trip to the mountains! Nature always amazes me</p>
+   <section class="sec1">
+    <div class="profile">
+        <img src="images/04122285d1c9fbfd8872ce01bcfb455d9c9a7ec7 (1).jpg" alt="">
+        <p><span>Ahmed Mohamed</span><br><span class="p2">@ahmed_m • 2 hours <br> ag</span>o</p>
+    </div>
+    <div class="text">
+    <p>Amazing view from my last trip to the mountains! Nature always amazes me 🏔️</p>
+    </div>
+    <div class="img1">
         <img src="images/ab16927cc181c7a2a7e390ac9c07eb5a40c6c244.jpg" alt="">
-        
+    </div>
+    <div class="act">
+    <div class="love">
+        <img src="images/Container.png" alt="">234
+    </div>
+    <div class="comment">
+        <img src="images/Vector (2).png" alt="">0
+    </div>
+    <div>
+        <img src="images/Icon (11).png" alt="">
+    </div>
     
-        
-        
+    </div>
+    
+   
+   </section>
+   <section class="sec1">
+    <div class="profile">
+        <img src="images/Image (Sarah Ali).png" alt="">
+        <p><span>Sarah Ali</span><br><span class="p2">@sarah_ali • 4 hours <br> ago</span></p>
+    </div>
+    <div class="text">
+        <p>Delicious breakfast to start an amazing day ☕🥐</p>
+    </div>
+    <div class="img1">
+        <img src="images/Image (Post) (1).png" alt="">
+    </div>
+     <div class="act">
+    <div class="love">
+        <img src="images/Container.png" alt="">234
+    </div>
+    <div class="comment">
+        <img src="images/Vector (2).png" alt="">0
+    </div>
+    <div>
+        <img src="images/Icon (11).png" alt="">
+    </div>
+    
+    </div>
+
+   </section>
+   <section class="sec1">
+    <div class="profile">
+        <img src="images/Image (Mahmoud Hassan).png" alt="">
+        <p><span>Mahmoud Hassan</span><br><span class="p2">@mahmoud_h • 6 hours <br> ago</span></p>
 
     </div>
-    <div class="post2">
+    <div class="text">
+        <p>The city at night has a special charm ✨</p>
+    </div>
+    <div class="img1">
+        <img src="images/Image (Post) (3).png" alt="">
+    </div>
+    <div class="act">
+    <div class="love">
+        <img src="images/Container.png" alt="">234
+    </div>
+    <div class="comment">
+        <img src="images/Vector (2).png" alt="">0
+    </div>
+    <div>
+        <img src="images/Icon (11).png" alt="">
+    </div>
+    
+    </div>
 
+
+   </section>
+   <section class="sec1">
+    <div class="profile">
+        <img src="images/Image (Lina Khaled).png" alt="">
+        <p><span>Lina Khaled</span><br><span class="p2">@lina_k • 8 hours <br> ago</span></p>
+    </div>
+    <div class="text">
+        <p>Productive day at work 💻 #development #coding</p>
 
     </div>
-    <div class="post3">
+    <div class="img1">
+        <img src="images/Image (Post) (4).png" alt="">
 
     </div>
-    <div class="post4">
-
+    <div class="act">
+    <div class="love">
+        <img src="images/Container.png" alt="">234
     </div>
-   </div>
+    <div class="comment">
+        <img src="images/Vector (2).png" alt="">0
+    </div>
+    <div>
+        <img src="images/Icon (11).png" alt="">
+    </div>
+    
+    </div>
 
- 
-</body>
+
+
+
+   </section>
+
+
+
+
+
+
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.getElementById("menuBtn");
+  const navLinks = document.querySelector(".nav ul"); // لأن ul عندك مفيهاش id
+
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+});
+
+
+  </script>
+   
+   </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SocialVibe</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
         <link rel="stylesheet" href="log.css">
 </head>
@@ -11,47 +11,75 @@
    <nav class="nav">
         <div class="icon">
             <img src="images/Navigation.png" alt="">
-            <h2 id="h2">SocialVibe</h2>
+            <p id="p">SocialVibe</ح>
         </div>
-    <ul>
-       <button class="button">
+         <button class="menu-btn" id="menuBtn">
+       <i class="fa-solid fa-bars"></i>
+        </button>
+       <ul>
          <li>
-            <a href="index.html" style="color: white;"> <i class="fa-regular fa-house"></i> Home</a>
+            <a href="index.html" > <i class="fa-regular fa-house"></i> Home</a>
         </li>
-       </button>
+       <button class="button">
         <li>
-            <a href="log.html"> <i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a>
+            <a href="log.html" style="color: white;"> <i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a>
         </li>
+      </button>
         <li>
             <a href="sign.html"> <i class="fa-solid fa-user"></i> Sign Up</a>
         </li>
     </ul>
    </nav>
-   <div class="container">
-   <div class="text">
-    <div class="logo">
-        <div>
-        <img src="images/Navigation.png" alt=""> 
-        </div>
-        <p class="social">SocialVibe</p>
+   <section class="container">
+    <div class="text">
+      <div class="logo">
+        <img src="images/Navigation.png" alt="">
+        <p>SocialVibe</p>
+      </div>
+      <h1>Connect with the world</h1>
+      <p>Share your moments and stories with friends and family</p>
     </div>
-     <!-- <p class="social">SocialVibe</p> -->
-    <p class="connect">Connect with the world</p>
-    <p class="share">Share your moments and stories with friends and family</p>
-       <div class="form">
-   <h2 class="welcome">Welcome back!</h2>
-   <p class="login">Login to continue</p>
-   <form action="" class="input">
-   <label for="user">Username</label>
-   <input type="text" id="user" placeholder="Enter username">
-   <label for="pass">Password</label>
-   <input type="password" id="pass" placeholder="Enter your password">
+    <div class="form">
+        <div class="title">
+            <h2>Welcome back!</h2>
+            <p>Login to continue</p>
+        </div>
+         <label for="user">Username</label>
+        <div class="form-group">
+           <input type="text" id="user"  name="username" placeholder="Enter Username">
+        </div>
+        <br>
+         <label for="pass">Password</label> 
+        <div class="form-group">
+            <input type="password" id="pass" name="password" placeholder="Enter Password">
+        </div>
+        <div class="btn">
+           <a href="profie.html">
+            <button>Login</button>
+           </a>
+        </div>
+        
+             <div class="sign">
+            <p id="p1">Don't have an account? <span><a href="sign.html">Sign up now</a></span></p>
+           <!-- <div><a href="sign.html"><p id="p2">Sign up now</p></a></div> -->
+    
+        </div>
+        
+    </div>
 
-   </form>
+   </section>
+      <script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.getElementById("menuBtn");
+  const navLinks = document.querySelector(".nav ul"); // لأن ul عندك مفيهاش id
 
-   </div>
-   </div>
-  
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+});
+
+
+  </script>
   
 </body>
 </html>

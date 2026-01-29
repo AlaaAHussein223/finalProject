@@ -1,6 +1,7 @@
 body{
- background: linear-gradient(90deg, rgba(173, 70, 255, 0.8) 0%, rgba(246, 51, 154, 0.8) 50%, rgba(43, 127, 255, 0.8) 100%);
+ /* background: linear-gradient(90deg, rgba(173, 70, 255, 0.8) 0%, rgba(246, 51, 154, 0.8) 50%, rgba(43, 127, 255, 0.8) 100%); */
 /* background-color: aliceblue; */
+background-image: linear-gradient(to right,#FAF5FF, #EFF6FF);
 }
 .icon{
     display: flex;
@@ -9,11 +10,15 @@ body{
     padding:30px;
     align-items: center;
 }
-#h2{
+#p{
     padding:10px;
- background: linear-gradient(135deg, #AD46FF 0%, #F6339A 50%, #2B7FFF 100%);
+  background: linear-gradient(135deg, #AD46FF 0%, #F6339A 50%, #2B7FFF 100%);
  -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 10px;
+    font-style: normal;
 
 }
 .nav{
@@ -23,6 +28,7 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
 
 }
 .nav ul{
@@ -52,34 +58,180 @@ color: white;
 .button li{
     align-items: center;
 }
- .post1,.post2,.post3,.post4{
-    margin:auto;
-    margin-top: 40px;
-    width:600px;
-    height:500px;
+.sec1{
+    width:50%;
+    height:auto;
     background-color: white;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    box-shadow: 0px 5px 12px rgb(0, 60, 6);
-
- }
- .me{
-    display: flex;
-    justify-content: space-between;
+    margin-top:30px;
     padding:20px;
-    margin-right: 300px;
- }
- .me img{
-    border-radius: 50%;
-    width:70px;
-    height: 70px;
- }
- .me p{
-    padding-right: 60px;
- }
- #amazing{
-    padding-left: 20px;
- }
- .post1 img{
-    width: 600px;
-   
+    margin-left: 300px;
+    background-color: #FFFFFF; 
+
 }
+.profile{
+    display: flex;
+}
+.profile span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+span.p2{
+    font-size: 15px;
+    color: gray;
+}
+.profile img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.img1 img{
+  width:800px;
+  height: 400px;
+
+
+}
+.img1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+
+}
+.text p{
+    color:#364153;
+    
+}
+.act{
+    display: flex;
+    gap:50px;
+}
+.act div{
+    display: flex;
+    margin-top: 20px;
+    color: #99A1AF;
+}
+/* ===== Responsive for screens <= 768px (mobile/tablet) ===== */
+@media (max-width: 768px) {
+
+  /* ===== Sections ===== */
+  .sec1 {
+    width: 90%;          /* بدل 50% */
+    margin: 20px auto;   /* بدل margin-left ثابت */
+    padding: 10px;       /* أقل padding */
+  }
+
+  /* ===== Images ===== */
+  .img1 img {
+    width: 100%;         /* تملى الـ div بالكامل */
+    height: auto;        /* تحافظ على النسب */
+  }
+
+  .profile img {
+    width: 60px;         /* أصغر على الموبايل */
+    height: 60px;
+  }
+
+  /* ===== Profile text ===== */
+  .profile span {
+    font-size: 16px;     /* أصغر شوية */
+  }
+  .profile span.p2 {
+    font-size: 12px;
+  }
+
+  /* ===== Navbar ===== */
+  .nav ul {
+    flex-direction: column;     /* يترتب عمود بدل row */
+    display: none;              /* مخفي افتراضياً */
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+
+  .nav ul.show {
+    display: flex;              /* يظهر لما نضيف class show بالـ JS */
+  }
+
+  /* ===== Buttons ===== */
+  .button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  /* ===== Action section ===== */
+  .act {
+    gap: 15px;                  /* أصغر gap */
+    flex-wrap: wrap;            /* لو الحاجة كبيرة تنتقل لسطر جديد */
+  }
+}
+
+
+
+.menu-btn{
+  display: none;
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px){
+
+  .nav{
+    position: relative;
+    padding: 0 10px;
+  }
+
+  .icon{
+    padding: 10px;
+  }
+
+  .menu-btn{
+    display: block;
+  }
+
+  .nav ul{
+    position: absolute;
+    top: 70px;
+    right: 10px;
+
+    width: 220px;
+    flex-direction: column;
+    gap: 0;
+
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+
+    display: none; /* مخفي */
+  }
+
+  .nav ul.show{
+    display: flex; /* يظهر */
+  }
+
+  .nav ul li{
+    margin-right: 0;
+    padding: 10px;
+  }
+
+  .button{
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .button li{
+    justify-content: center;
+  }
+}
+

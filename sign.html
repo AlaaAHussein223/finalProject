@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign</title>
+    <title>SocialVibe</title>
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
        <link rel="stylesheet" href="sign.css">
 </head>
@@ -11,45 +11,89 @@
       <nav class="nav">
         <div class="icon">
             <img src="images/Navigation.png" alt="">
-            <h2 id="h2">SocialVibe</h2>
+            <p id="p">SocialVibe</p>
         </div>
+         <button class="menu-btn" id="menuBtn">
+       <i class="fa-solid fa-bars"></i>
+        </button>
     <ul>
-       <button class="button">
+       
          <li>
-            <a href="index.html" style="color: white;"> <i class="fa-regular fa-house"></i> Home</a>
+            <a href="index.html"> <i class="fa-regular fa-house"></i> Home</a>
         </li>
-       </button>
+       
         <li>
             <a href="log.html"> <i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a>
         </li>
+        <button class="button">
         <li>
-            <a href="sign.html"> <i class="fa-solid fa-user"></i> Sign Up</a>
+            <a href="sign.html" style="color: white;"> <i class="fa-solid fa-user"></i> Sign Up</a>
         </li>
+        </button>
     </ul>
    </nav>
-   <div class="container">
-    <div class="div1">
-       <img src="images/Navigation.png" alt=""> 
-       <h2 id="social">SocialVibe</h2>
+   <section class="container">
+      <div class="text">
+      <div class="logo">
+        <img src="images/Navigation.png" alt="">
+        <p>SocialVibe</p>
+      </div>
+      <h1>Join our community</h1>
+      <p>Start your journey in sharing special moments</p>
     </div>
-       <h2>Connect with the world</h2>
-       <p>share your moments and stories with friends and family</p>
-
     <div class="form">
-        <h1>Create new account</h1>
-        <p>Fill in the details to get started</p>
-        <label for="full">Full Name</label><br><br>
-        <input type="text" id="full" placeholder="Enter your full name"><br><br>
-        <label for="user">UserName</label><br><br>
-        <input type="text" id="user" placeholder="Choose a username"><br><br>
-        <label for="email">Email</label><br><br>
-        <input type="email" id="email" placeholder="example@gmail.com"><br><br>
-        <label for="pass">Password</label><br><br>
-        <input type="password" id="pass" placeholder="Enter a password">
+        <div class="title">
+            <h2>Create new account</h2>
+            <p>Fill in the details to get started</p>
+        </div>
+         <label for="full">Full Name</label>
+        <div class="form-group">
+           <input type="text" id="full"  name="full name" placeholder="Enter your full name">
+        </div>
+        <br>
+         <label for="user">Username</label> 
+        <div class="form-group">
+            <input type="text" id="user" name="username" placeholder="Choose a username">
+        </div>
+        <label for="email">Email</label>
+        <div class="form-group">
+            <input type="email"id="email" name="email" placeholder="Example@email.com">
+        </div>
+        <label for="pass">Password</label>
+        <div class="form-group">
+            <input type="password" id="pass" name="password" placeholder="....">
+        </div>
+        <label for="image">Profile Image<span>(optional)</span></label>
+        <div class="form-group">
+            <input type="file" name="image" id="image" placeholder="https://example.com/image.jpg">
+        </div>
+        <div class="btn">
+           <a href="profie.html"> 
+             <button>Create Account</button>
+           </a>
+        </div>
+         <div class="sign">
+            <p id="p1">Already have an account <span><a href="log.html">Login</a></span></p>
+           <!-- <div><a href="log.html"><p id="p2">Login</p></a></div> -->
+        </div>
         
-
+        
     </div>
 
-   </div>
+   </section>
+ 
+ <script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.getElementById("menuBtn");
+  const navLinks = document.querySelector(".nav ul"); // لأن ul عندك مفيهاش id
+
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+});
+
+
+  </script>
+
 </body>
 </html>
