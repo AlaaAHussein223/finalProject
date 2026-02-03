@@ -44,6 +44,7 @@ background-image: linear-gradient(to right,#FAF5FF, #EFF6FF);
 }
 .nav ul li a{
     text-decoration: none;
+    color:black
     
 }
 .nav ul li a:hover{
@@ -232,7 +233,7 @@ span.p2{
     gap: 10px;
 
 }
-#btn1{
+#btn1 button{
     width: 80%;
     width: 450px;
     height: 40px;
@@ -240,15 +241,17 @@ span.p2{
     border: none;
     color: white;
     background-image: linear-gradient(to right,#AD46FF,#F6339A);
+    cursor: pointer;
 }
 #btn1 a{
     color: white;
 }
-#btn2{
+#btn2 button{
     width:100px;
     height: 40px;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
 
 }
 #btn1 a, #btn2 a{
@@ -268,13 +271,16 @@ span.p2{
     max-width: 500px;
     margin: 20px auto;  /* يتركز في الوسط */
     padding: 10px;
-    background-size: cover; /* الخلفيات تتناسب */
+     /* background-size: cover; /*الخلفيات تتناسب */
   }
 
   /* ===== Images inside posts ===== */
-  .img1 img, .div4 .img1 img {
+   .div4 .img1 img {
     width: 100%;        /* يملى العرض بالكامل */
-    height: auto;       /* نسبة ارتفاع مناسبة */
+      /* height: auto;     نسبة ارتفاع مناسبة */
+  }
+  .img1 img{
+     width: 100%;
   }
 
   .div1 .logo img {
@@ -299,12 +305,26 @@ span.p2{
   }
 
   /* ===== Buttons ===== */
-  .buttons, #btn1, #btn2, .div2 button {
-    width: 100%;       /* يملى العرض بالكامل */
-    max-width: 300px;  
+  .buttons,#btn1,#btn2,.div2 button {
+     width: 100%;      /* يملى العرض بالكامل */
+    max-width: 500px;  
     margin: 5px 0;
   }
-
+  #btn1{
+    width:100%;
+    max-width: 700px;
+  }
+  #btn1 button{
+    /* width: 100%; */
+    max-width: 500;
+    width: 100%;
+  }
+  #btn2 button{
+    width: 100%;
+    max-width: 500;
+    /* width: 50%; */
+  }
+  
   /* ===== Navbar ===== */
   .nav ul {
     flex-direction: column;  
@@ -382,7 +402,7 @@ span.p2{
   }
 
   .nav ul.show{
-    display: flex; /* يظهر */
+    display: flex; /*يظهر */
   }
 
   .nav ul li{

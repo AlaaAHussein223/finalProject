@@ -44,6 +44,7 @@ background-image: linear-gradient(to right,#FAF5FF, #EFF6FF);
 }
 .nav ul li a{
     text-decoration: none;
+    color: black;
     
 }
 .nav ul li a:hover{

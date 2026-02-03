@@ -31,7 +31,9 @@
         </li>
        
          <li>
+            <a href="profie.html">
              <img class="img2" src="images/04122285d1c9fbfd8872ce01bcfb455d9c9a7ec7 (1).jpg" alt="">
+             </a>
         </li>
        
         
@@ -56,12 +58,20 @@
         <p> <span>89</span> Posts</p>
 
          <div class="buttons">
-        <button id="btn1">
+            <div id="btn1">
+            <a href="edit.html">
+                <button>Edit Profile</button>
+            </a>
+            </div>
+           
+        <!-- <button id="btn1">
         <a href="edit.html">Edit Profile</a>
-        </button>
-        <button id="btn2">
-         <a href="#">Share Profile</a>
-        </button>
+        </button> -->
+        <div id="btn2">
+          <a href="#">
+            <button>Share Profile</button>
+          </a>
+        </div>
        </div>
 
       </div>
@@ -148,6 +158,8 @@
     navLinks.classList.toggle("show");
   });
 });
+ const newUser=document.getElementById("name");
+ localStorage.getItem("name",newUser)
 
 
   </script>

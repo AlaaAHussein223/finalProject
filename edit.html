@@ -31,7 +31,9 @@
         </li>
        
          <li>
+          <a href="profie.html">
              <img class="img2" src="images/04122285d1c9fbfd8872ce01bcfb455d9c9a7ec7 (1).jpg" alt="">
+             </a>
         </li>
        
         <button class="button">
@@ -49,19 +51,38 @@
         <p>Profile Picture</p>
         <img src="images/04122285d1c9fbfd8872ce01bcfb455d9c9a7ec7 (1).jpg" alt="">
       </div>
+      <label for="user">Username</label>
       <div class="form">
+      <input type="text" id="user" placeholder="enter new username">
+      </div> <br>
+      <label for="pass">Password</label>
+      <div class="form">
+       <input type="password" id="pass" placeholder="enter new password">
+      </div> 
+      <!-- <div class="form">
        <label for="user">Username</label> <br>
        <input type="text" id="user" name="username" placeholder="demo_user"><br>
        <label for="pass">Password</label> <br>
        <input type="password" id="pass" name="password" placeholder=".....">
-      </div>
-      <div class="buttons">
+      </div> -->
+      <!-- <div class="buttons">
         <button id="btn1">
-       <a href="#">Save Changes</a>
+        <a href="profie.html">Save Changes</a>
         </button>
         <button id="btn2">
-          <a href="#">Cansel</a>
-        </button>
+        <a href="profie.html">Cancel</a>
+        </button> -->
+        <div class="buttons">
+       <div id="btn1">
+        <a href="profie.html">
+          <button>Save Changes</button>
+        </a>
+       </div>
+        <div id="btn2">
+      <a href="profie.html">
+        <button>Cancel</button>
+      </a>
+        </div>
       </div>
      </div>
   </section>
@@ -73,6 +94,12 @@
   menuBtn.addEventListener("click", () => {
     navLinks.classList.toggle("show");
   });
+});
+const savedUser=document.getElementById("btn1")
+savedUser.addEventListener("click",()=>{
+const username=document.getElementById("user").value
+localStorage.setItem("username",username);
+
 });
 
 

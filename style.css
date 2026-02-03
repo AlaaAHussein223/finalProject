@@ -44,6 +44,7 @@ background-image: linear-gradient(to right,#FAF5FF, #EFF6FF);
 }
 .nav ul li a{
     text-decoration: none;
+    color: black;
 }
 .nav ul li a:hover{
     color: red;
@@ -113,39 +114,39 @@ span.p2{
     margin-top: 20px;
     color: #99A1AF;
 }
-/* ===== Responsive for screens <= 768px (mobile/tablet) ===== */
-@media (max-width: 768px) {
 
-  /* ===== Sections ===== */
+ @media (max-width: 768px) {
+
+  
   .sec1 {
-    width: 90%;          /* بدل 50% */
-    margin: 20px auto;   /* بدل margin-left ثابت */
-    padding: 10px;       /* أقل padding */
+    width: 90%;          
+    margin: 20px auto;   
+    padding: 10px;       
   }
 
-  /* ===== Images ===== */
+  
   .img1 img {
-    width: 100%;         /* تملى الـ div بالكامل */
-    height: auto;        /* تحافظ على النسب */
+    width: 100%;         
+    /* height: auto;         */
   }
-
+  
   .profile img {
-    width: 60px;         /* أصغر على الموبايل */
+    width: 60px;         
     height: 60px;
   }
 
-  /* ===== Profile text ===== */
+  
   .profile span {
-    font-size: 16px;     /* أصغر شوية */
+    font-size: 16px;     
   }
   .profile span.p2 {
     font-size: 12px;
   }
 
-  /* ===== Navbar ===== */
+  
   .nav ul {
-    flex-direction: column;     /* يترتب عمود بدل row */
-    display: none;              /* مخفي افتراضياً */
+    flex-direction: column;     
+    display: none;              
     position: absolute;
     top: 70px;
     right: 0;
@@ -155,34 +156,34 @@ span.p2{
   }
 
   .nav ul.show {
-    display: flex;              /* يظهر لما نضيف class show بالـ JS */
+    display: flex;              
   }
 
-  /* ===== Buttons ===== */
+  
   .button {
     font-size: 14px;
     padding: 8px 12px;
   }
 
-  /* ===== Action section ===== */
+  
   .act {
-    gap: 15px;                  /* أصغر gap */
-    flex-wrap: wrap;            /* لو الحاجة كبيرة تنتقل لسطر جديد */
+    gap: 15px;                  
+    flex-wrap: wrap;            
   }
 }
 
 
 
-.menu-btn{
+ .menu-btn{
   display: none;
   border: none;
   background: transparent;
   font-size: 24px;
   cursor: pointer;
   margin-right: 20px;
-}
+} 
 
-/* ===== Mobile ===== */
+
 @media (max-width: 768px){
 
   .nav{
@@ -213,11 +214,11 @@ span.p2{
 
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 
-    display: none; /* مخفي */
+    display: none; 
   }
 
   .nav ul.show{
-    display: flex; /* يظهر */
+    display: flex; 
   }
 
   .nav ul li{
@@ -233,5 +234,5 @@ span.p2{
   .button li{
     justify-content: center;
   }
-}
+} 
 
